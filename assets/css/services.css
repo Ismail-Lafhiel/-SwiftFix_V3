@@ -1,0 +1,125 @@
+/* css imports */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,800&display=swap');
+
+/* css rules */
+:root {
+    --blue-color: rgba(9, 75, 114, 1);
+    --gray-color: rgba(79, 79, 79, 1);
+    --light-gray-color: rgba(139, 140, 140, 1);
+    --dark-gray-color: rgba(45, 47, 48, 1);
+    --white-color: #FFF;
+    --beige-color: #F2F7FF;
+    --Playfair-font: "Playfair Display";
+    --Jakarta-font: "Plus Jakarta Sans";
+    --Poppins-font: "Poppins";
+    --size: 10px;
+  }
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--Poppins-font);
+    text-align: center;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--Playfair-font);
+    color: var(--dark-gray-color);
+}
+
+/* about hero */
+.hero-banner {
+    background: url("../img/bg.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero-banner h1 {
+    font-weight: 900;
+    color: rgba(249, 248, 249, 1);
+}
+
+/* end services hero */
+
+/* start services content */
+
+.services-content .row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 3rem;
+}
+
+.services-content .row .box {
+    margin-top: 3.0rem;
+    text-align: center;
+    -webkit-box-shadow: 0 0 .5rem .2rem rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 .5rem .2rem rgba(0, 0, 0, 0.15);
+    padding: 2.5rem 1.5rem;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.services-content .btn-box {
+    margin-top: 4rem;
+}
+
+.services-content .box:hover {
+    background-color: var(--blue-color);
+    color: #ffffff;
+}
+
+.services-content .box:hover .img-box img {
+    -webkit-filter: brightness(0) invert(1);
+    filter: brightness(0) invert(1);
+}
+
+.services-content .box .detail-box h5 {
+    font-weight: bold;
+    font-size: 1.9rem;
+    margin: 2rem 0;
+}
+
+.services-content .box .detail-box p {
+    font-size: 1.3rem;
+    width: 30rem;
+    margin: 0;
+}
+
+.img-box img {
+    width: 8rem;
+
+}
+
+.services-content .btn-box a {
+    font-size: 1.3rem;
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 1.5rem 4.5rem;
+    background-color: var(--blue-color);
+    border: .1rem solid var(--blue-color);
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 1rem;
+}
+
+
+.services-content .btn-box a:hover {
+    background-color: transparent;
+    color: var(--blue-color);
+}
+
+/* end services content */
