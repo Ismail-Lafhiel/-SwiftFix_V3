@@ -6,7 +6,7 @@ https://www.figma.com/file/4Hb21tDnd1x2X2j7vtOgKb/SwiftFix-v2?mode=dev
 
 # -User Stories :
 
-1-En tant que designer UI/UX, je mettrai à jour la maquette de SwiftFix pour refléter les modifications et garantir la cohérence visuelle.
+1-En tant que designer UI/UX, je mettrai à jour la maquette de SwiftFix pour refléter les modifications et garantir la cohérence visuelle.\n
 2-En tant que développeur Front-end, j'ajouterai des breakpoints pour une réactivité optimale.
 3-En tant que développeur Front-end, je créerai un menu mobile avec un bouton de navigation sur toutes les pages.
 4-En tant que développeur Front-end, j'intégrerai un menu déroulant interactif dans la barre de navigation.
