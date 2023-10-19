@@ -1,10 +1,10 @@
 # -SwiftFix_V3
 
-### -Maquette design :
+### Maquette design :
 [Click here to see mockup](https://www.figma.com/file/4Hb21tDnd1x2X2j7vtOgKb/SwiftFix-v2?mode=dev)
 
 
-### -User Stories :
+### User Stories :
 
 1. En tant que designer UI/UX, je mettrai à jour la maquette de SwiftFix pour refléter les modifications et garantir la cohérence visuelle.\n
 2. En tant que développeur Front end, j'ajouterai des breakpoints pour une réactivité optimale.
