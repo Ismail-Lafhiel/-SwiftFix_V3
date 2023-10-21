@@ -7,6 +7,18 @@ burger.addEventListener("click", () => {
     menu.classList.toggle("active")
     console.log("done");
 })
+//end burger menu
+
+/* services dropdown */
+
+const dropDown = document.querySelector(".fa-caret-down")
+const dropDownMenu = document.querySelector(".dropdown-menu")
+
+dropDown.addEventListener("click", ()=>{
+    dropDownMenu.classList.toggle("active")
+})
+
+/* end services dropdown */
 
 // interactive search bar
 
@@ -16,6 +28,7 @@ searchIcon.addEventListener("click", ()=>{
     search.classList.toggle("active");
     console.log("operation done");
 })
+//end interactive search bar
 
 // form handling
 
