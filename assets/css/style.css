@@ -550,7 +550,8 @@ html {
 
     /* interactive search bar */
     .menu .search-field {
-        left: 39%;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     .menu .search-field i {
@@ -559,7 +560,6 @@ html {
 
     .menu .search-field.active {
         width: 100%;
-        left: 0%;
     }
 
     /* end interactive search bar */
@@ -593,6 +593,9 @@ html {
 /* end mobile design */
 /* tablet breakpoint */
 @media (min-width: 500px) and (max-width: 900px) {
+    p{
+        font-size: 1.1rem;
+    }
     .menu {
         margin-top: -1rem;
         background-color: var(--blue-color);
@@ -611,13 +614,16 @@ html {
     }
 
     /* interactive search bar */
+    .menu .search-field {
+        left: 50%;
+        transform: translateX(-50%);
+    }
     .menu .search-field i {
         color: var(--gray-color);
     }
 
     .menu .search-field.active {
         width: 100%;
-        left: 0%;
     }
 
     /* end interactive search bar */
@@ -750,55 +756,11 @@ html {
     }
 }
 
-/* start fixing search field position */
-@media (max-width: 900px) {
-    .menu .search-field {
-        left: 45%;
-    }
-}
-
-@media (max-width: 800px) {
-    .menu .search-field {
-        left: 44%;
-    }
-}
-
-@media (max-width: 700px) {
-    .menu .search-field {
-        left: 42%;
-    }
-}
-
-@media (max-width: 600px) {
-    .menu .search-field {
-        left: 41%;
-    }
-}
-
-@media (max-width: 500px) {
-    .menu .search-field {
-        left: 38%;
-    }
-    /* services dropdown */
-    .menu .nav-item .dropdown-menu {
-        left: 15%;
-    }
-    /* end services dropdown */
-}
-
-@media (max-width: 400px) {
-    .menu .search-field {
-        left: 35%;
-    }
-    /* services dropdown */
-    .menu .nav-item .dropdown-menu {
-        left: 0%;
-    }
-    /* end services dropdown */
-}
-
 /* end fixing search field position */
 @media (min-width: 900px) {
+    p{
+        font-size: 1.2rem;
+    }
     .header {
         height: 8rem;
     }

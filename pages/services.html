@@ -66,7 +66,7 @@
             <div class="container container-content">
                 <h2 class="secondary-heading"> Our Services </h2>
                 <div class="row">
-                    <div class="box">
+                    <div class="box" onclick="openModal()">
                         <div class="img-box">
                             <img src="../assets/img/s1.png" alt="s1 image" />
                         </div>
@@ -80,7 +80,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="box ">
+                    <div class="box" onclick="openModal()">
                         <div class="img-box">
                             <img src="../assets/img/s2.png" alt="s2 image" />
                         </div>
@@ -94,7 +94,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="box ">
+                    <div class="box " onclick="openModal()">
                         <div class="img-box">
                             <img src="../assets/img/s3.png" alt="s3 image" />
                         </div>
@@ -108,6 +108,20 @@
                             </p>
                         </div>
                     </div>
+                </div>
+                <div class="modal" id="modal">
+                    <img src="../assets/img/s3.png" alt="s3 image" />
+                    <h3>Plumbing</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe mollitia quam officia velit,
+                        ratione placeat nesciunt. Omnis ut illum alias nemo! Eos dolorem aliquid consectetur laboriosam,
+                        exercitationem itaque ipsa distinctio.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur est rem qui expedita
+                        adipisci hic necessitatibus saepe consequuntur dicta. Placeat magni dolorum, sequi explicabo
+                        quod pariatur expedita consequatur natus? Nobis?
+                    </p>
+                    <button class="btn-modal" onclick="closeModal()">
+                            Exit
+                    </button>
                 </div>
                 <div class="btn-box">
                     <a href="services.html">

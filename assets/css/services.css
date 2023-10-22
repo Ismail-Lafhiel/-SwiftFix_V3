@@ -13,7 +13,7 @@
     --Jakarta-font: "Plus Jakarta Sans";
     --Poppins-font: "Poppins";
     --size: 10px;
-  }
+}
 
 * {
     padding: 0;
@@ -30,12 +30,10 @@ h3 {
     color: var(--dark-gray-color);
 }
 
-/* about hero */
+/* services hero */
 .hero-banner {
-    background: url("../img/bg.png");
-    background-position: center;
+    background: linear-gradient(rgba(0, 77, 123, .85), rgba(0, 77, 123, .85)), url(../img/bg.png) center center no-repeat;
     background-size: cover;
-    background-repeat: no-repeat;
 }
 
 .hero-banner h1 {
@@ -46,6 +44,9 @@ h3 {
 /* end services hero */
 
 /* start services content */
+.services-content {
+    position: relative;
+}
 
 .services-content .row {
     display: grid;
@@ -71,6 +72,7 @@ h3 {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .services-content .btn-box {
@@ -97,6 +99,7 @@ h3 {
     font-size: 1.3rem;
     width: 30rem;
     margin: 0;
+    text-overflow: ellipsis;
 }
 
 .img-box img {
@@ -122,4 +125,101 @@ h3 {
     color: var(--blue-color);
 }
 
+.modal {
+    background: var(--beige-color);
+    padding: 5rem;
+    border-radius: 1rem;
+    -webkit-box-shadow: 0 0 .7rem 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 .7rem 0 rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    visibility: hidden;
+    transition: transform .4s, top .4s;
+    z-index: 10;
+}
+.open-modal{
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    visibility: visible;
+}
+.modal img {
+    width: 20rem;
+}
+
+.modal h3 {
+    margin: 2rem 0;
+    font-size: 2.6rem;
+    font-family: var(--Poppins-font);
+}
+
+.modal p {
+    width: 80rem;
+    margin: auto;
+    font-size: 1.4rem;
+    line-height: 1.6;
+}
+
+.modal .btn-modal {
+    background-color: var(--blue-color);
+    color: var(--white-color);
+    padding: 1rem;
+    width: 10rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin: 2rem auto 0;
+    border: none;
+}
+
 /* end services content */
+
+@media (max-width: 1200px) {
+    .modal {
+        padding: 3rem;
+    }
+
+    .img-box img {
+        width: 7rem;
+
+    }
+
+    .modal p {
+        width: 70rem;
+        font-size: 1.4rem;
+
+    }
+}
+
+@media (max-width: 900px) {
+    .modal {
+        padding: 5rem;
+    }
+
+    .modal img {
+        width: 15rem;
+
+    }
+
+    .modal p {
+        width: 40rem;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .modal {
+        padding: 3rem;
+    }
+
+    .modal img {
+        width: 10rem;
+
+    }
+
+    .modal p {
+        width: 30rem;
+        font-size: 1.1rem;
+    }
+}

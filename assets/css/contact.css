@@ -29,13 +29,13 @@ h3 {
   font-family: var(--Playfair-font);
   color: var(--dark-gray-color);
 }
-
-/* about hero */
+h2{
+  font-size: 2.4rem;
+}
+/* contact hero */
 .hero-banner {
-  background: url("../img/bg.png");
-  background-position: center;
+  background: linear-gradient(rgba(0, 77, 123, .85), rgba(0, 77, 123, .85)), url(../img/bg.png) center center no-repeat;
   background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .hero-banner h1 {
