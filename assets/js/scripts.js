@@ -14,7 +14,7 @@ burger.addEventListener("click", () => {
 const dropDown = document.querySelector(".fa-caret-down")
 const dropDownMenu = document.querySelector(".dropdown-menu")
 
-dropDown.addEventListener("click", ()=>{
+dropDown.addEventListener("click", () => {
     dropDownMenu.classList.toggle("active")
 })
 
@@ -24,22 +24,32 @@ dropDown.addEventListener("click", ()=>{
 
 const search = document.querySelector(".search-field");
 const searchIcon = document.querySelector("#search-bar");
-searchIcon.addEventListener("click", ()=>{
+searchIcon.addEventListener("click", () => {
     search.classList.toggle("active");
     console.log("operation done");
 })
 //end interactive search bar
 // start modal
 const modal = document.getElementById("modal")
-const openModal = ()=>{
+const openModal = () => {
     modal.classList.add("open-modal");
 }
-const closeModal = ()=>{
-    modal.classList.remove("open-modal");
+const closeModal = () => {
+    modal.classList.remove("open-modal");   
 }
 // end modal
-// form handling
+// start FAQ
 
+const faPlus = document.querySelectorAll(".fa-plus")
+const answer = document.querySelectorAll(".answer")
+faPlus.forEach((fa, index) => {
+    fa.addEventListener('click', () => {
+        answer[index].classList.toggle("active")
+    });
+});
+
+// end FAQ
+// form handling
 const form = document.getElementById("form");
 form.addEventListener('submit', function (e) {
     // prevent the form from submitting
@@ -140,6 +150,13 @@ const handleMsg = (xmark, check) => {
     let left = require - msg.length
     if (msg.length > 0 && msg.length < require) {
         msgError.innerHTML = left + " more characters required"
+        msgError.style.color = 'red'
+        xmark.style.visibility = "visible"
+        check.style.visibility = "hidden"
+        return false
+    }
+    else if(msg.length == 0){
+        msgError.innerHTML = "You have to enter a message"
         msgError.style.color = 'red'
         xmark.style.visibility = "visible"
         check.style.visibility = "hidden"

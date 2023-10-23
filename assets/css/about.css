@@ -80,6 +80,54 @@ h3 {
     padding-right: 1rem;
 }
 
+/* faq */
+.question-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--beige-color);
+    -webkit-box-shadow: 0 0 0.7rem 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 0.7rem 0 rgba(0, 0, 0, 0.2);
+    margin-bottom: 3rem;
+    transition: all 1s;
+}
+.faq-heading{
+    margin-bottom: 5rem;
+}
+.question {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem;
+}
+
+.question p {
+    font-size: 1.5rem;
+}
+
+.question i {
+    font-size: 2rem;
+    cursor: pointer;
+    transition: 1s ease;
+}
+.answer{
+    border-top: 2px solid var(--gray-color);
+    padding: 3rem;
+    display: none;
+    transition: 3s ease-in;
+}
+.answer.active{
+    display: block;
+    transition: 1s ease;
+    
+}
+.answer p {
+    text-align: justify;
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
 @media (min-width: 426px) {
     /* .hero-banner {
         padding: 0 5rem;
@@ -89,26 +137,29 @@ h3 {
         font-size: 2.4rem;
         padding: 0 0 3rem;
     }
+
     .about-content p {
         font-size: 1.3rem;
         color: var(--gray-color);
         line-height: 1.6;
         margin: 1rem 10rem;
     }
+
     .articles {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(40rem, 1fr));
         gap: 3rem;
     }
+
     /* .articles .article{
         width: 100%;
     } */
     .articles p {
         font-size: 1.2rem;
     }
+
     .fa-circle {
         font-size: 1.5rem;
         font-weight: 900;
     }
 }
-

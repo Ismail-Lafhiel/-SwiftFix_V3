@@ -50,7 +50,7 @@ h3 {
 
 .services-content .row {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     gap: 3rem;
 }
 
@@ -96,7 +96,8 @@ h3 {
 }
 
 .services-content .box .detail-box p {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
+    padding: 0 2rem;
     width: 30rem;
     margin: 0;
     text-overflow: ellipsis;
