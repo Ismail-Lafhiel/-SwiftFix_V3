@@ -72,44 +72,33 @@
                             <div class="col">
                                 <form action="#" id="form">
                                     <div>
-                                        <input type="text" placeholder="Name" id="full-name" onkeyup="handleName()" />
-                                        <i class="fa-solid fa-xmark"></i>
-                                        <i class="fa-solid fa-check"></i>
-                                        <p class="danger" id="name-error"></p>
+                                        <input type="text" class="input-field" placeholder="Name" id="full-name" />
+                                        <p class="message" id="name-error"></p>
                                     </div>
                                     <div>
-                                        <input type="text" placeholder="Phone Number" id="phone"
-                                            onkeyup="handlePhone()" />
-                                        <i class="fa-solid fa-xmark"></i>
-                                        <i class="fa-solid fa-check"></i>
-                                        <p class="danger" id="phone-error"></p>
+                                        <input type="text" class="input-field" placeholder="Phone Number" id="phone"
+                                             />
+                                        <p class="message" id="phone-error"></p>
                                     </div>
                                     <div>
-                                        <input type="email" placeholder="Email" id="email" onkeyup="handleEmail()" />
-                                        <i class="fa-solid fa-xmark"></i>
-                                        <i class="fa-solid fa-check"></i>
-                                        <p class="danger" id="email-error"></p>
+                                        <input type="email" class="input-field" placeholder="Email" id="email" />
+                                        <p class="message" id="email-error"></p>
                                     </div>
                                     <div>
-                                        <select id="subject" onkeyup="handleSubj()">
+                                        <select id="subject" class="input-field">
                                             <option value="">--Select Your Subject--</option>
                                             <option value="Repair">Repair</option>
                                             <option value="Improve">Improve</option>
                                             <option value="Maintain">Maintain</option>
                                         </select>
-                                        <i class="fa-solid fa-xmark"></i>
-                                        <i class="fa-solid fa-check"></i>
-                                        <p class="danger" id="subj-error"></p>
+                                        <p class="message" id="subject-error"></p>
                                     </div>
                                     <div>
-                                        <textarea type="text" class="message-box" placeholder="Message" id="message"
-                                            onkeyup="handleMsg()"> </textarea>
-                                        <i class="fa-solid fa-xmark"></i>
-                                        <i class="fa-solid fa-check"></i>
-                                        <p class="danger" id="msg-error"></p>
+                                        <textarea type="text" class="message-box input-field" placeholder="Message" id="message"> </textarea>
+                                        <p class="message" id="msg-error"></p>
                                     </div>
                                     <div>
-                                        <button>
+                                        <button type="submit" id="submit">
                                             SEND a Message
                                         </button>
                                     </div>
@@ -222,8 +211,8 @@
         <script
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=initMap"
             async defer></script>
+            <!-- End Google Map -->
         <script src="../assets/js/scripts.js"></script>
-        <!-- End Google Map -->
 </body>
 
 </html>
