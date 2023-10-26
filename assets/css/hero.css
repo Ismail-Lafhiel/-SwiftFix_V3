@@ -1,0 +1,10 @@
+.hero-banner {
+    background: linear-gradient(rgba(0, 77, 123, 0.85), rgba(0, 77, 123, 0.55)),
+      url(../img/bg.png) center center no-repeat;
+    background-size: cover;
+  }
+  
+  .hero-banner h1 {
+    font-weight: 900;
+    color: rgba(249, 248, 249, 1);
+  }

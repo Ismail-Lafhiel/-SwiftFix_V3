@@ -32,19 +32,7 @@ h3 {
 h2 {
   font-size: 2.4rem;
 }
-/* contact hero */
-.hero-banner {
-  background: linear-gradient(rgba(0, 77, 123, 0.85), rgba(0, 77, 123, 0.85)),
-    url(../img/bg.png) center center no-repeat;
-  background-size: cover;
-}
 
-.hero-banner h1 {
-  font-weight: 900;
-  color: rgba(249, 248, 249, 1);
-}
-
-/* end contact hero */
 /* start contact-form */
 .row {
   padding: 0 20rem;
