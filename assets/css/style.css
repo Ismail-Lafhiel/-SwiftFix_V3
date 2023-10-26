@@ -134,6 +134,9 @@ html {
 
 /* end search icon */
 /* services dropdown */
+.menu .nav-item{
+  text-align: center;
+}
 .menu .nav-item:nth-child(3) {
   position: relative;
 }
