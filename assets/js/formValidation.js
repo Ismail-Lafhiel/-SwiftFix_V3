@@ -99,7 +99,7 @@ const handleValid = (input, valid) => {
   input.classList.remove("error");
 };
 
-form.addEventListener("submit",  (e)=> {
+form.addEventListener("input",  (e)=> {
     e.preventDefault();
     if (
       validateFullName() &&
@@ -109,9 +109,9 @@ form.addEventListener("submit",  (e)=> {
       validateSubject()
     ) {
       submit.removeAttribute("disabled");
-      alert("Form submitted successfully");
+      console.log("form is not valid");
     } else {
       submit.setAttribute("disabled", true);
-      alert("Form validation failed");
+      console.log("everything went well");
     }
   });
