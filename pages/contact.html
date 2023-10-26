@@ -1,220 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- css imports -->
-    <link rel="stylesheet" href="../assets/css/normalize.css">
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="../assets/css/contact.css">
-    <link rel="stylesheet" href="../assets/css/hero.css">
+    <link rel="stylesheet" href="../assets/css/normalize.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/contact.css" />
+    <link rel="stylesheet" href="../assets/css/hero.css" />
     <!-- end css imports -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>SwiftFix - Contact</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- header -->
     <header class="header">
-        <header class="header">
-            <nav class="navbar container">
-                <div>
-                    <a class="logo" href="../index.html">S</a>
-                    <span class="swiftfix">SwiftFix</span>
-                </div>
-                <ul class="menu">
-                    <li class="nav-item "><a href="../index.html" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="./about.html" class="nav-link">About</a></li>
-                    <li class="nav-item">
-                        <a href="./services.html" class="nav-link">Services</a>
-                        <i class="fa-solid fa-caret-down"></i>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Maintenance</a></li>
-                            <li><a href="#">Electrical</a></li>
-                            <li><a href="#">Plumbing</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item active"><a href="./contact.html" class="nav-link">Contact</a></li>
-                    <li class="nav-item search-field">
-                        <i class="fa-solid fa-magnifying-glass" id="search-bar"></i>
-                        <input type="text" id="search">
-                    </li>
-                </ul>
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
+      <nav class="navbar container">
+        <div>
+          <a class="logo" href="../index.html">S</a>
+          <span class="swiftfix">SwiftFix</span>
+        </div>
+        <ul class="menu">
+          <li class="nav-item">
+            <a href="../index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="./about.html" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="./services.html" class="nav-link">Services</a>
+            <i class="fa-solid fa-caret-down"></i>
+            <ul class="dropdown-menu">
+              <li><a href="#">Maintenance</a></li>
+              <li><a href="#">Electrical</a></li>
+              <li><a href="#">Plumbing</a></li>
+            </ul>
+          </li>
+          <li class="nav-item active">
+            <a href="./contact.html" class="nav-link">Contact</a>
+          </li>
+          <li class="nav-item search-field">
+            <i class="fa-solid fa-magnifying-glass" id="search-bar"></i>
+            <input type="text" id="search" />
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
 
-            </nav>
-        </header>
-
-        <main class="content">
-
-            <!-- contact hero -->
-            <section class="hero-banner">
-                <div class="container container-content">
-                    <h1 class="primary-heading">Contact Us</h1>
-                </div>
-            </section>
-            <section class="contact-content">
-                <!-- start contact form -->
-                <section class="contact-form">
-                    <div class="container container-content">
-                        <div class="secondary-heading">
-                            <h2>
-                                Get In Touch
-                            </h2>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <form action="#" id="form">
-                                    <div>
-                                        <input type="text" class="input-field" placeholder="Name" id="full-name" />
-                                        <p class="message" id="name-error"></p>
-                                    </div>
-                                    <div>
-                                        <input type="text" class="input-field" placeholder="Phone Number" id="phone"
-                                             />
-                                        <p class="message" id="phone-error"></p>
-                                    </div>
-                                    <div>
-                                        <input type="email" class="input-field" placeholder="Email" id="email" />
-                                        <p class="message" id="email-error"></p>
-                                    </div>
-                                    <div>
-                                        <select id="subject" class="input-field">
-                                            <option value="">--Select Your Subject--</option>
-                                            <option value="Repair">Repair</option>
-                                            <option value="Improve">Improve</option>
-                                            <option value="Maintain">Maintain</option>
-                                        </select>
-                                        <p class="message" id="subject-error"></p>
-                                    </div>
-                                    <div>
-                                        <textarea type="text" class="message-box input-field" placeholder="Message" id="message"> </textarea>
-                                        <p class="message" id="msg-error"></p>
-                                    </div>
-                                    <div>
-                                        <button type="submit" id="submit" disabled>
-                                            SEND a Message
-                                        </button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <!-- end contact form -->
-                <!-- start contact info -->
-                <section class="contact-info">
-                    <div class="container container-content">
-                        <div class="sub-contact">
-                            <div class="info">
-                                <article>
-                                    <h4>Contact Us</h4>
-                                    <p>It is a long established fact that a reader will be distracted by the readable
-                                        content of
-                                        a
-                                        page when looking at its layout.</p>
-                                </article>
-                                <article>
-                                    <h4>Business hours:</h4>
-                                    <p>Monday to Saturday 9:30 am - 4:30 pm</p>
-                                </article>
-                                <article>
-                                    <h4>Address:</h4>
-                                    <p>A-67 south CasaBlanca</p>
-                                </article>
-                                <article>
-                                    <h4>Email:</h4>
-                                    <p>abc@abc.com</p>
-                                </article>
-                                <article>
-                                    <h4>Phone:</h4>
-                                    <p>1800 - 458495-4455</p>
-                                </article>
-                            </div>
-                            <div id="map"></div>
-                        </div>
-                    </div>
-                </section>
-                <!-- end contact info -->
-            </section>
-
-            <!-- footer -->
-            <footer class="footer">
-                <div class="container container-content front-footer">
-                    <div class="logo-footer">
-                        <span class="logo">S</span>
-                        <span class="swiftfix">SwiftFix</span>
-                    </div>
-                    <div class="links">
-                        <div class="col col-1">
-                            <p>Product</p>
-                            <p>Overview</p>
-                            <p>Features</p>
-                            <p>Tutorials</p>
-                            <p>Pricing</p>
-                            <p>Releases</p>
-                        </div>
-                        <div class="col col-2">
-                            <p>Company</p>
-                            <p>About</p>
-                            <p>Services</p>
-                            <p>Careers</p>
-                            <p>Contact</p>
-                            <p>Partners</p>
-                        </div>
-                        <div class="col col-3">
-                            <p>Support</p>
-                            <p>Help Center</p>
-                            <p>Terms of service</p>
-                            <p>Legal</p>
-                            <p>Privacy Policy</p>
-                            <p>Status</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="sub-footer">
-                    <span>&copy; 2023 SwiftFix. All rights reserved</span>
-                    <ul class="social-icons">
-                        <li>
-                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa-solid fa-globe"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"> <i class="fa-brands fa-x-twitter"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </footer>
-        </main>
-        <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
-        <script>
-            function initMap() {
-                // Create a map object and specify the center and zoom level
-                var map = new google.maps.Map(document.getElementById('map'), {
-                    center: new google.maps.LatLng(40.712775, -74.005973),
-                    zoom: 12,
-                });
-            }
-        </script>
-        <!-- Google Map -->
-        <script
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=initMap"
-            async defer></script>
-            <!-- End Google Map -->
-        <script src="../assets/js/scripts.js"></script>
-        <script src="../assets/js/formValidation.js"></script>
-</body>
-
+    <main class="content">
+      <!-- contact hero -->
+      <section class="hero-banner">
+        <div class="container container-content">
+          <h1 class="primary-heading">Contact Us</h1>
+        </div>
+      </section>
+      <section class="contact-content">
+        <!-- start contact form -->
+        <section class="contact-form">
+          <div class="container container-content">
+            <div class="secondary-heading">
+              <h2>Get In Touch</h2>
+            </div>
+            <div class="row">
+              <div class="col">
+                <form action="#" id="form">
+                  <div>
+                    <input
+                      type="text"
+                      class="input-field"
+                      placeholder="Name"
+                      id="full-name"
+                    />
+                    <p class="message" id="name-error"></p>
+                  </div>
+                  <div>
+                    <input
+                      type="text"
+                      class="input-field"
+                      placeholder="Phone Number"
+                      id="phone"
+                    />
+                    <p class="message" id="phone-error"></p>
+                  </div>
+                  <div>
+                    <input
+                      type="email"
+                      class="input-field"
+                      placeholder="Email"
+                      id="email"
+                    />
+                    <p class="message" id="email-error"></p>
+                  </div>
+                  <div>
+                    <select id="subject" class="input-field">
+                      <option value="">--Select Your Subject--</option>
+                      <option value="Repair">Repair</option>
+                      <option value="Improve">Improve</option>
+                      <option value="Maintain">Maintain</option>
+                    </select>
+                    <p class="message" id="subject-error"></p>
+                  </div>
+                  <div>
+                    <textarea
+                      type="text"
+                      class="message-box input-field"
+                      placeholder="Message"
+                      id="message"
+                    >
+                    </textarea>
+                    <p class="message" id="msg-error"></p>
+                  </div>
+                  <div>
+                    <button type="submit" id="submit" disabled>
+                      SEND a Message
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- end contact form -->
+        <!-- start contact info -->
+        <section class="contact-info">
+          <div class="container container-content">
+            <div class="sub-contact">
+              <div class="info">
+                <article>
+                  <h4>Contact Us</h4>
+                  <p>
+                    It is a long established fact that a reader will be
+                    distracted by the readable content of a page when looking at
+                    its layout.
+                  </p>
+                </article>
+                <article>
+                  <h4>Business hours:</h4>
+                  <p>Monday to Saturday 9:30 am - 4:30 pm</p>
+                </article>
+                <article>
+                  <h4>Address:</h4>
+                  <p>A-67 south CasaBlanca</p>
+                </article>
+                <article>
+                  <h4>Email:</h4>
+                  <p>abc@abc.com</p>
+                </article>
+                <article>
+                  <h4>Phone:</h4>
+                  <p>1800 - 458495-4455</p>
+                </article>
+              </div>
+              <div id="map"></div>
+            </div>
+          </div>
+        </section>
+        <!-- end contact info -->
+      </section>
+    </main>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container container-content front-footer">
+        <div class="logo-footer">
+          <span class="logo">S</span>
+          <span class="swiftfix">SwiftFix</span>
+        </div>
+        <div class="links">
+          <div class="col col-1">
+            <p>Product</p>
+            <p>Overview</p>
+            <p>Features</p>
+            <p>Tutorials</p>
+            <p>Pricing</p>
+            <p>Releases</p>
+          </div>
+          <div class="col col-2">
+            <p>Company</p>
+            <p>About</p>
+            <p>Services</p>
+            <p>Careers</p>
+            <p>Contact</p>
+            <p>Partners</p>
+          </div>
+          <div class="col col-3">
+            <p>Support</p>
+            <p>Help Center</p>
+            <p>Terms of service</p>
+            <p>Legal</p>
+            <p>Privacy Policy</p>
+            <p>Status</p>
+          </div>
+        </div>
+      </div>
+      <div class="sub-footer">
+        <span>&copy; 2023 SwiftFix. All rights reserved</span>
+        <ul class="social-icons">
+          <li>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-globe"></i></a>
+          </li>
+          <li>
+            <a href="#"> <i class="fa-brands fa-x-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+    <script>
+      function initMap() {
+        // Create a map object and specify the center and zoom level
+        var map = new google.maps.Map(document.getElementById("map"), {
+          center: new google.maps.LatLng(40.712775, -74.005973),
+          zoom: 12,
+        });
+      }
+    </script>
+    <!-- Google Map -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=initMap"
+      async
+      defer
+    ></script>
+    <!-- End Google Map -->
+    <script src="../assets/js/scripts.js"></script>
+    <script src="../assets/js/formValidation.js"></script>
+  </body>
 </html>
