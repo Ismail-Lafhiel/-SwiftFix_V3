@@ -39,9 +39,9 @@ let i = 0;
 //Total Slides
 let j = testimonials.length;
 
-let testimonialContainer = document.getElementById("testimonial-container");
-let nextBtn = document.getElementById("next");
-let prevBtn = document.getElementById("prev");
+const testimonialContainer = document.getElementById("testimonial-container");
+const nextBtn = document.getElementById("next");
+const prevBtn = document.getElementById("prev");
 
 nextBtn.addEventListener("click", () => {
   i = (j + i + 1) % j;
@@ -52,13 +52,13 @@ prevBtn.addEventListener("click", () => {
   displayTestimonial();
 });
 
-let displayTestimonial = () => {
+const displayTestimonial = () => {
   testimonialContainer.innerHTML = `
-    <h3>${testimonials[i].heading}</h3>
-    <p>${testimonials[i].testimonial}</p>
-    <img src=${testimonials[i].image}>
-    <h4>${testimonials[i].name}</h4>
-    <h6>${testimonials[i].job}</h6>
+      <h3>${testimonials[i].heading}</h3>
+      <p>${testimonials[i].testimonial}</p>
+      <img src=${testimonials[i].image}>
+      <h4>${testimonials[i].name}</h4>
+      <h6>${testimonials[i].job}</h6>
     `;
 };
 window.onload = displayTestimonial;
